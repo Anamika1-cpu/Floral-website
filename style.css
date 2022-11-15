@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #FA7E7E;
+
+}
+#home{
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: #FA7E7E; */
+    /* background-color: yellow; */
+    /* overflow: hidden; */
+    
+
+}
+a{
+    text-decoration: none;
+}
+#fullnav{
+
+    width: 100%;
+    height: 26%;
+    background-color:#FA7E7E;
+    position: absolute;
+    z-index: 99999;
+    /* left: -100%; */
+    display: flex;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1).4s;
+}
+#fleft{
+    padding: 5em 6em;
+    width: 60%;
+    height: 100%;
+    background-color: teal;
+    counter-reset: section;
+
+}
+
+#fleft a{
+    color: white;
+    /* background-color: violet; */
+    font-family: "Voyage";
+    font-size: 100px;
+    cursor: pointer;
+}
+#fleft a::after{
+    counter-increment: section;
+    content: counter(section);
+}
+
+.link
+{
+    position: relative;
+    width: 20%;
+    /* display: flex-start; */
+
+    /* background-color: yellowgreen; */
+}
+
+.mouse{
+    position: absolute;
+    width: 100px;
+    height: 130px;
+    top: 0;
+    left: 0;
+    background-color: red;
+    opacity: 0;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1).3s;
+}
+.mouse img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#fright{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(128, 94, 0, 0.904);
+}
+#fright i{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: white;
+    font-size: 25px;
+}
+#center{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    /* transform: translate(-10%,-10%); */
+    background-image: url("https://images.unsplash.com/photo-1519017524945-ed31bb7a3786?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+}
+#nav{
+    width: 100%;
+    height: 70px;
+    padding: 0 5em;
+
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "MADE Bon Voyage";
+
+}
+#nav h3{
+    color: #fff;
+    font-size: 25px;
+}
+#nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 2em;
+
+}
+#nav #links{
+    display: flex;
+    /* background: #000; */
+    justify-content: space-between;
+    align-items: center;
+}
+#nav #links #icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav i{
+    color: #fff;
+    font-size: 15px;
+}
+#icons i:nth-child(1){
+    margin-left: 1em;
+    margin-right: 2em;
+}
+#icons i:nth-child(2){
+    margin-left: 1em;
+}
+#icons i:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    padding: .5em;
+    border-radius: 50%;
+    background-color: #fff;
+    color:#FA7E7E;
+    /* font-size: 12px; */
+}
+#mid{
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    /* background-color: teal; */
+    padding: 0 5em;
+
+}
+
+#mid>img{
+    width: 90%;
+    position: relative;
+    left: 1em;
+    top:1em;
+    z-index: 999;
+}
+
+#floral{
+    margin-left: 100px;
+    margin-top: 130px;
+    color: white;
+    font-family: "MADE Bon Voyage";
+    font-size:200px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    position: absolute;
+    z-index: 9999;
+}
+#eternity{
+    margin-left: 42%;
+    margin-top: 130px;
+    color: white;
+    font-family: "Voyage";
+    font-size:200px;
+    font-weight: 100;
+    letter-spacing: 10px;
+    position: absolute;
+    /* z-index: 9999; */
+}
+#para{
+    position: absolute;
+    top: 18%;
+    z-index: 999;
+}
+p{
+    color: white;
+    font-family: "Gilroy";
+    width: 28%;
+    line-height: 22px;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+
+    
+}
+#para i{
+    margin-left: 100px;
+    /* margin-top: 100px; */
+    color: #FA7E7E;
+    padding: 10px;
+    border-radius: 50%;
+    
+    background-color: white;
+    margin-right: 100px;
+}
+#scr{
+    margin-top: -22px;
+    margin-left: 10%;
+}
+
+#lan{
+    display: flex;
+    color: white;
+    font-family: "Gilroy";
+    margin-left: 90%;
+}
+#lan h6{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+#twodots{
+    width: 100%;
+    height: 20vh;
+    color: white;
+    /* background-color: red; */
+    padding: 3em 35em;
+}
+#twodots h2{
+    font-family: "Voyage";
+    font-weight: 100;
+    font-size: 25px;
+    /* margin-bottom: 10px; */
+}
+
+#twodots h3:nth-child(2){
+    font-weight: 100;
+    font-size: 30px;
+    font-family: "Junitta";
+}
+#twodots h3{
+    display: inline-block;
+}
+#twodots h3:nth-child(4){
+    font-weight: 100;
+    font-size: 22px;
+    font-family: "Voyage";
+    /* margin-left: 150px; */
+    /* margin-top: -200px; */
+}
+#twodots svg{
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    /* margin-top: 20px; */
+    
+}
+#magele{
+    position: relative;
+    margin-top: 20px;
+    padding: 0 5em;
+
+}
+#magele img{
+    width: 45%;
+    /* position: absolute; */
+    /* transform: translate(-50%,-50%); */
+    /* height: 45%; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+#magele h1:nth-child(1){
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    font-family: "Voyage";
+    font-size: 140px;
+    margin-left: 290px;
+    margin-bottom:170px;
+    margin-top: -10px;
+}
+#magele h1:nth-child(2){
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    /* letter-spacing: 10px; */
+    font-family: "Voyage";
+    font-size: 140px;
+    /* width: 60%; */
+    margin-left: 270px;
+    margin-top: 100px;
+}
+#circle{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Voyage";
+    position: absolute;
+    left: 28%;
+    margin-left: 40px;
+    margin-top: 20px;
+    top: 40%;
+}
+#magele h1:nth-child(4){
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    /* letter-spacing: 10px; */
+    font-family: "Voyage";
+    font-size: 140px;
+    /* width: 60%; */
+    margin-left: 300px;
+    margin-top: 300px;
+}
+#magele h1:nth-child(5){
+    position: absolute;
+    color: white;
+    font-weight: 100;
+    /* letter-spacing: 10px; */
+    font-family: "Voyage";
+    font-size: 140px;
+    /* width: 60%; */
+    margin-left: 350px;
+    margin-top: 430px;
+}
+#elegant
+{
+    width: 100%;
+    height: 13vh;
+    margin-top: 40px;
+    /* background-color: teal; */
+    border-top: 2px solid white;
+    padding: 0 5em;
+
+}
+#elegant{
+    display: flex;
+    justify-content: space-between;
+}
+#left{
+    text-align: left;
+
+}
+#right{
+    text-align: right;
+
+}
+#elegant h4{
+    color: rgb(155, 28, 28);
+    font-size: 20px;
+    font-family: "voyage";
+}
+#elegant h6{
+    font-family: "Gilroy";
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    /* text-align: right; */
+
+}
+#prosh{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 5em;
+
+}
+#photos::-webkit-scrollbar{
+    display: none;
+}
+#prosh h2{
+    font-size: 60px;
+    font-family: "Voyage";
+    font-weight: 100;
+    color: white;
+    margin-bottom: 15px;
+}
+#parent{
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    /* background-color: red; */
+}
+#parent::-webkit-scrollbar{
+    display: none;
+}
+#photos{
+    position: relative;
+    /* width: auto; */
+    min-height: 80vh;
+    /* overflow-x: auto; */
+    /* overflow-y: hidden; */
+    /* white-space: nowrap; */
+    
+
+}
+.ph{
+    display:inline-block;
+    width: 18em;
+    margin-right: 2.5em;
+    background-color: #fff;
+    height: 60vh;
+    overflow: hidden;
+}
+.ph img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+#footer{
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    background-color: white;
+    /* padding: 3em 0;
+     */
+    padding: 3em 5em;
+    overflow: hidden;
+
+}
+#footer h5{
+    font-family: "Gilroy";
+    color: black;
+}
+#footer h2{
+    color: rgb(155, 28, 28);
+    font-family: "Voyage";
+    font-size: 100px;
+    font-weight: 100;
+}
+#footer h4{
+    text-transform: capitalize;
+    font-family: "Gilroy";
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+#footer span{
+    color: rgb(155, 28, 28);
+    
+}
+#footer h1{
+    color: rgb(155, 28, 28);
+    font-size: 100px;
+    font-weight: 100;
+    font-family: "Voyage";
+}
+#footer img{
+    position: absolute;
+    width: 600px;
+    top: -90%;
+    right: -5%;
+}
